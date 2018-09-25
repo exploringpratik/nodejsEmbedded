@@ -14,7 +14,7 @@ const post_schema = new mongoose.Schema(
       {
         type: mongoose.Schema.Types.ObjectId,
         ref:"Comment",
-        required: "Comment is Required"
+        required: "Comment is Requiredd"
       }
     ],
     newcomments: [
