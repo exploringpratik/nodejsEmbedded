@@ -10,6 +10,7 @@ const morgan = require("morgan");
 require("./mongo");
 
 //Models
+//sasdasd
 require("./model/Post");
 require("./model/Comment");
 
