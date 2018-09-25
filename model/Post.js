@@ -16,6 +16,13 @@ const post_schema = new mongoose.Schema(
         ref:"Comment",
         required: "Comment is Required"
       }
+    ],
+    newcomments: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref:"NewComment",
+        required: "NewComment is Required"
+      }
     ]
   },
   {
@@ -24,4 +31,6 @@ const post_schema = new mongoose.Schema(
 );
 
 module.exports = mongoose.model("Post", post_schema);
+module.exports = mongoose.model("NewPost", post_schema);
+
 

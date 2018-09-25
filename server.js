@@ -10,7 +10,6 @@ const morgan = require("morgan");
 require("./mongo");
 
 //Models
-//sasdasd
 require("./model/Post");
 require("./model/Comment");
 
@@ -18,7 +17,8 @@ require("./model/Comment");
 app.use(bodyParser.json()).use(morgan());
 
 //Routes
-app.use("/posts",require("./routes/posts"))
+app.use("/posts",require("./routes/posts"));
+app.use('/newposts',require('./routes/newposts'));
 
 //Not Found Route
 app.use((req, res, next) => {

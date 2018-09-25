@@ -9,8 +9,15 @@ const comment_schema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "Post",
     required: "Post is Required Field"
+  },
+  newpost: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "NewPost",
+    required: "Post is Required Field"
   }
 });
 
 module.exports = mongoose.model("Comment", comment_schema);
+module.exports = mongoose.model("NewComment", comment_schema);
+
 
